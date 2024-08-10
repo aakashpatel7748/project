@@ -1,0 +1,50 @@
+*{
+     margin: 0px; 
+     padding: 0px; 
+     box-sizing: border-box;
+     font-family: 'poppins', sans-serif;
+      
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+h1{
+    
+    position: relative;
+    color: white;
+    font-size: 5rem;
+    text-transform: uppercase;
+} 
+
+h1::before{
+    content: '' ;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0% {
+        content: 'HI';
+    }
+    20%{
+        content: 'Its';
+    }
+    40%{
+        content: 'sortedcoding';
+    }
+    60%{
+        content: 'Like,share';
+    }
+    80%{
+        content: 'subscribe';
+    }
+    100%{
+        content: 'Thanks for watching';
+    }
+}
